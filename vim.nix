@@ -1,5 +1,16 @@
 with import <nixpkgs> {};
 
+let vim-eyaml = pkgs.vimUtils.buildVimPlugin {
+  name = "vim-eyaml";
+  src = pkgs.fetchFromGitHub {
+    owner = "davewongillies";
+    repo = "vim-eyaml";
+    rev = "876a6873c03ba904601987e86959acbb8e0dd43d";
+    sha256 = "1fllmgwk2a933x8lisrfaz3b5a2cbgs95i18vl9lfcdl68id9nky";
+    };
+  };
+
+in
 vim_configurable.customize {
     # Specifies the vim binary name.
     # E.g. set this to "my-vim" and you need to type "my-vim" to open this vim
@@ -111,6 +122,7 @@ vim_configurable.customize {
         fzf
         fzf-vim
         fzfWrapper
+        vim-eyaml
         vim-colors-solarized
         ale
       ];
