@@ -87,5 +87,5 @@
     extraGroups = [ "wheel" "networkmanager" "adbusers" ];
   };
 
-  system.stateVersion = "19.03";
+  system.stateVersion = "19.09";
 }
