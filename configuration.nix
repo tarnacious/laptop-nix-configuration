@@ -50,9 +50,6 @@
     pass
     git 
     gnupg
-    neomutt
-    offlineimap
-    msmtp
     docker_compose
     fzf
     tmux
@@ -63,7 +60,13 @@
     file
     htop
     ack
+    virtmanager
+    pwgen
+    neomutt
+    offlineimap
+    msmtp
     lynx
+    urlview
   ];
 
   programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
