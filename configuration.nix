@@ -39,6 +39,7 @@
   time.timeZone = "Europe/Berlin";
 
   environment.systemPackages = with pkgs; [
+    gksu
     wget 
     (import ./vim.nix)
     gawk
