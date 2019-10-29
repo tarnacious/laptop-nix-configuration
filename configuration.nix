@@ -69,6 +69,9 @@
     lynx
     urlview
     cifs_utils
+
+    gnome3.libgnome-keyring
+    gnome3.gnome-keyring
   ];
 
   programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
@@ -84,6 +87,11 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.displayManager.gdm.wayland = false;
   services.xserver.desktopManager.gnome3.enable = true;
+
+  gnome3 = {
+    gnome-keyring.enable = true;
+    seahorse.enable = true;
+  };
 
   services.xserver.libinput.enable = true;
 
