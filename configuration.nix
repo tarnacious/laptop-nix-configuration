@@ -68,6 +68,7 @@
     msmtp
     lynx
     urlview
+    cifs_utils
   ];
 
   programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
